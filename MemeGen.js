@@ -38,5 +38,7 @@ submitBtn.addEventListener('submit', function(e) {
 
 // click on image to remove
 displayArea.addEventListener('click', function(e) {
-	e.target.remove();
+	if (e.target.classList[0] === 'MemeContainer') {
+		e.target.remove();
+	}
 });
