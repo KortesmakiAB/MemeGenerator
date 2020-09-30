@@ -1,0 +1,114 @@
+body {
+	background-color: lightgrey;
+}
+
+/* Top Header */
+.header {
+	background-color: hsla(0, 0%, 64%, 1);
+	border-radius: 8px;
+	height: 250px;
+	margin: 15px;
+}
+h1 {
+	text-align: center;
+	font-family: impact;
+	color: white;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 0 #000;
+	padding: 8px;
+}
+h1 span {
+	color: white;
+	letter-spacing: 2px;
+	text-shadow: 5.5px 5.5px 0 #000;
+}
+h2 {
+	text-align: center;
+	font-family: impact;
+	color: white;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 0 #000;
+}
+.EachLine {
+	display: inline-block;
+	padding: 5px;
+}
+.labels {
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+	margin-right: 30px;
+}
+.inputs {
+	width: 550px;
+}
+.SubmitButton {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -.55em;
+	margin-right: .55em;
+}
+#SubmitButton {
+	width: 175px;
+	border-radius: 8px;
+	padding: 5px;
+	font-family: impact;
+	letter-spacing: 2px;
+}
+
+/* Bottom - Meme Display area */
+.MemeDisplayArea {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+/* p tag and parent CSS was from Jeff Seymour */
+/* https://codepen.io/MetalEscape/pen/WrYxVM */
+.MemeContainer {
+	width: 350px;
+	height: 350px;
+	background-size: cover;
+	background-position: center;
+	margin: 0 25px;
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;
+}
+/* Received a little help from https://coder-coder.com/background-image-opacity/ */
+.MemeContainer:hover::before {
+	content: "remove this stiff meme";
+	text-align: center;
+	padding: 30% 0;
+	background-color: hsla(0, 0%, 28%, 0.75);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	font-size: 4em;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px 0 #000;
+	z-index: 1;
+}
+p {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 0 5px;
+	font-family: impact;
+	font-size: 2.25em;
+	overflow-wrap: break-word;
+	color: white;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px 0 #000;
+}
+.MemeTextBottom {
+	bottom: 0;
+}
+.MemeTextTop {
+	top: 0;
+}
